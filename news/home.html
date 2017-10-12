@@ -1,0 +1,274 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>新闻首页</title>
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    html,body{
+        height: 100%;
+        font-family: Microsoft YaHei;
+        background-color: #eee;
+    }
+  
+    a{
+        text-decoration: none;
+    }
+
+    ul,li{
+        list-style: none;
+    }
+
+    .container{
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    .header{
+        width: 20%;
+        height: 50px;
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        margin-top: 10px;
+    }
+
+    .header a{
+        display: inline-block;
+        position: absolute;
+        color:#fff;
+        width: 100px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        word-break: keep-all;
+        border: 1px solid #ccc;
+        background-color: #F4DE95;
+        border-radius: 6px;
+    }
+
+    .header a:hover{
+        background-color: #fff;
+        color:#ccc;
+    }
+
+    .header a:first-child{
+        right:0;
+    }
+
+    .header a:last-child{
+        right: 140px;
+    }
+
+    .header-next{
+        height: 90px;
+        text-align: center;
+                        border-bottom: 1px dashed #ccc;
+    }
+    .header-next h1{
+       font-weight: bold;
+       color:#D051C1;
+       letter-spacing:10px;
+    }
+    .header-next img{
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        left: 341px;
+        border-radius: 10px;
+        top: 15px;
+    }
+
+    .header-next h2{
+        color:#1F5D0F;
+        line-height: 70px;
+        letter-spacing: 25px;
+    }
+
+    .wrap-items{
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .wrap-items .wrap-item{
+        display: inline-block;
+        width: 15%;
+        text-align: center;
+        margin: 5px;
+        border-right: 1px solid #000;
+    }
+
+    .wrap-items .wrap-item:last-child{
+        border:none;
+    }
+
+    .wrap-items .wrap-item a{
+        color:#408080;
+    }
+
+    .middle-pic{
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .middle-pic img{
+        width: 25%;
+        height: 280px;
+    }
+
+    .middle-pic .pic{
+        width: 40%;
+    }
+
+    .list li.zjj{
+        position: absolute;
+        width:20%;
+        text-align: center;
+        margin-top: 20px;
+        height: 200px;
+        background-color: #fff;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .list li.sport{
+        left: 100px;
+
+    }
+    .list li.sport p{
+        font-size: 20px;
+        background-color: #ECDDD6;
+    }
+
+    .list li.person{
+        left: 526px;
+    }
+    .list li.person p{
+        background-color: #BEE0F9;
+        font-size: 20px;
+    }
+
+    .list li.edu{
+        right: 100px;
+    }
+    .list li.edu p{
+        font-size: 20px;
+        background-color:#EBC0F8;
+    }
+
+    .list li.cxj{
+        position: absolute;
+        width:20%;
+        text-align: center;
+        margin-top: 20px;
+        height: 200px;
+        background-color: #fff;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .list li.technology{
+        left: 100px;
+        margin-top: 255px;
+    }
+    .list li.technology p{
+        font-size: 20px;
+        background-color: #CEF0F2;
+    }
+    .list li.car{
+        right: 100px;
+        margin-top: 255px;
+    }
+    .list li.car p{
+        background-color: #BEE0F9;
+        font-size: 20px;
+    }
+    .list li a{
+        display: block;
+        border-bottom: 1px solid #ccc;
+        margin-top: 15px;
+        padding-bottom: 10px;
+                white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 15px;
+    }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+            <a href="reg.html" class="btn btn-primary">注册</a>     
+             <a href="login.html" class="btn btn-primary">登录</a>
+    </div>
+        <div class="header-next">
+            <img src="./images/289411.jpg" alt="">
+            <h1>新闻连连看</h1>
+            <h2>汇聚天下大事&nbsp;&nbsp;关注社会焦点</h2>
+        </div>
+        <ul class="wrap-items">
+            <li class="wrap-item zjj">              
+                <a href="" ><img src="./images/index1.jpg"><class="btn btn-info">主页</a>
+            </li>
+            <li class="wrap-item">              
+                <a href="seeall.php?class=s" ><img src="./images/index9.png"><class="btn btn-info">体育</a>
+            </li>
+            <li class="wrap-item">
+                <a href="seeall.php?class=k" ><img src="./images/index2.jpg"><class="btn btn-info">教育</a>
+            </li>
+            <li class="wrap-item">
+                <a href="seeall.php?class=t"><img src="./images/index7.png"><class="btn btn-info">科技</a>
+            </li>
+            <li class="wrap-item">
+                <a href="seeall.php?class=c" ><img src="./images/index8.png"><class="btn btn-info">汽车</a>
+            </li>
+        </ul>
+        <div class="middle-pic">
+            <img src="./images/290604.jpg" alt="">
+            <img src="./images/289489.jpg" class="pic" alt="">
+            <img src="./images/291154.jpg" alt="">
+        </div>
+        <div class="info">
+            <ul class="list">
+                <li class="sport zjj" style="width: 600px;">
+                    <p>体育栏目</p>
+                    <a href="">CLPGA威海公开赛冯珊珊张哈娜并列领先交65杆</a>
+                    <a href="">CLPGA威海公开赛冯珊珊张哈娜并列领先交65杆</a>
+                    <a href="">CLPGA威海公开赛冯珊珊张哈娜并列领先交65杆</a>
+                    <a href="">CLPGA威海公开赛冯珊珊张哈娜并列领先交65杆</a>
+                </li>
+                <li class="edu zjj" style="width: 600px;">
+                    <p>教育栏目</p>
+                    <a href="">"高考最牛钉子户"梁实453分 20次高考首达二本线</a>
+                    <a href="">"高考最牛钉子户"梁实453分 20次高考首达二本线</a>
+                    <a href="">"高考最牛钉子户"梁实453分 20次高考首达二本线</a>
+                    <a href="">"高考最牛钉子户"梁实453分 20次高考首达二本线</a>
+                </li>
+                <li class="technology cxj" style="width:600px;">
+                    <p>科技栏目</p>
+                    <a href="">智能机要逼死高端单反?佳能也同样处于尴尬境地</a>
+                    <a href="">智能机要逼死高端单反?佳能也同样处于尴尬境地</a>
+                    <a href="">智能机要逼死高端单反?佳能也同样处于尴尬境地</a>
+                    <a href="">智能机要逼死高端单反?佳能也同样处于尴尬境地</a>
+                </li>
+                <li class="car cxj" style="width:600px;">                    
+                    <p>汽车栏目</p>
+                    <a href="">飞入寻常百姓家？红旗新SUV引发的联想</a>
+                    <a href="">飞入寻常百姓家？红旗新SUV引发的联想</a>
+                    <a href="">飞入寻常百姓家？红旗新SUV引发的联想</a>
+                    <a href="">飞入寻常百姓家？红旗新SUV引发的联想</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

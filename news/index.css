@@ -1,0 +1,122 @@
+﻿*{
+	margin:0px;
+	padding:0;
+}
+body{
+    background-color:#EEFDEA;	
+}
+.head{	
+	width: 1903px;
+	height: 80px;
+	line-height:80px;
+           background:url("./images/9.jpg");
+}
+.head h1{
+	letter-spacing: 40px;
+	text-align: center;
+	font-size:50px;
+	font-weight: bold;
+	font-style: italic;
+	color:#705686;
+}
+tbody tr td a{
+	text-decoration:none;
+	margin-left:60px;
+	color:#1571FA;
+}
+.content{
+	border: 1px solid #BCC2C6;
+	overflow: hidden;        
+}
+.h{
+	margin-left:120px;
+	font-size:40px;
+	color:#FDC53C;
+}
+.right{
+	margin-left:220px;
+	text-decoration:none;
+	font-size:25px;
+	color:#18BD45;
+}
+.rights{
+	margin-left:220px;
+	text-decoration:none;
+	font-size:25px;
+	color:#18BD45;
+}
+.content td{
+	text-decoration:none;
+	font-size:20px;
+}
+ul li{
+	list-style: none;
+}
+.sport{
+	width: 800px;
+	height:600px;
+	float: left;
+	margin-left: 85px;
+	margin-top: 40px;
+}
+
+.tec{
+	width: 800px;
+	height: 600px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+.kno{
+	width: 800px;
+	height: 600px;
+	float: left;
+	margin-left: 85px;
+	margin-top: 40px;
+}
+.car{
+	width: 800px;
+	height: 600px;
+	float: left;
+	margin-left: 100px;
+	margin-top: 40px;
+}
+.seeall{
+	background: url("./3.jpg") 100%;
+	margin-top:180px;
+	margin-left: 500px;
+	width: 800px;
+	height: 600px;
+
+}
+.seeall h1{
+	margin-left: 60px;
+    font-size: 28px;
+    font-weight: bold;
+	letter-spacing: 20px;
+	color:rgb(3, 3, 14);
+}
+.scontent{
+	border: 1px solid #FF7A35;
+	height: 500px;
+	
+}
+.head a{
+	 display: inline-block;
+	 position: absolute;
+	 right:20px;
+	 top:20px;
+	 color:#fff;
+	 width: 150px;
+	 height: 40px;
+	 line-height: 40px;
+	 text-align: center;
+	 word-break: keep-all;
+	 border: 1px solid #ccc;
+	 background-color: #F4DE95;
+	 border-radius: 15px;
+	 text-decoration:none;
+	 font-size:35px;
+	 padding-left:20px;
+}
+

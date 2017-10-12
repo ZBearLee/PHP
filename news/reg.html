@@ -1,0 +1,155 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>注册页</title>
+    <script>
+            function check(){
+                var username=document.newsform.username.value;
+                var  pwd=document.newsform.pwd.value;
+                var repwd=document.newsform.repwd.value;
+                var email=document.newsform.email.value;
+                var letter="*#$&";
+                if(username.length==0) {
+                    alert("用户名不能为空，请输入用户名");
+                   newsform.username.focus();
+                    return false;
+                }
+                if(username.length<=2||username.length>=12){
+                    alert("用户名长度应该大于2且小于12个字符,请更正后重输");
+                    newsform.username.focus();
+                    return false;
+                }
+                for(var i=0;i<username.length;i++){
+                  var ch=username.charAt(i);
+                    if(letter.indexOf(ch)>-1){
+                        alert("用户名不能包含*,#,$,&特殊符号");
+                        newsform.username.focus();
+                        return false;
+                    }
+                }
+                if(pwd.length==0){
+                    alert("密码不能为空，请输入密码");
+                   newsform.pwd.focus();
+                    return false;
+                    }
+                var str=pwd;
+                var par=/^(?=.*?[a-zA-Z])(?=.*?[0-9])[a-zA-Z0-9]{6,}$/;
+                if (par.test (str)) {
+                }else{
+                    alert("密码必须是大于5个字符字母和数字的组合");
+                  newsform.pwd.focus();    
+                    return false;         
+                }
+                if (repwd.length == 0) {
+                    alert("请再次输入密码进行确认");
+                    newsform.repwd.focus();
+                    return false;
+                }
+                var len=pwd.length>repwd.length?pwd.length:repwd.length;
+                    for(var i=0;i<len;i++){
+                        var ch1=pwd.charAt(i);
+                        var ch2=repwd.charAt(i);
+                        if (ch1 !=ch2) {
+                            alert("请确认两次输入的密码一致!");
+                            newsform.repwd.focus();
+                            return false;
+                        }
+                    }
+            if(email.length==0){
+                alert("请输入电子邮箱");
+                newsform.email.focus();
+                return false;
+            }
+  
+ }
+    </script>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  html,body{
+    height: 100%;
+    font-family: sans-serif;
+  }
+  .container{
+    background:url("./images/reg.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .form-horizontal{
+    width: 360px;
+    height: 360px;
+    top: 50%;
+    left: 50%;
+    margin-top: -180px;
+    margin-left: -180px;
+    position: absolute;
+  }
+
+  h1{
+    text-align: center;
+    font-weight: 600px bold;
+    font-size: 40px;
+    color:#1AA260;
+  }
+
+  .form-control,.btn.btn-default{
+    outline:none;
+    border-radius: 30px;
+    font-size: 20px;
+    margin-top:20px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    filter:alpha(opacity:30); 
+    opacity:0.7;
+    -moz-opacity:0.3;
+  }
+  .form-group .form-control{
+    width: 250px;
+    height: 40px;
+    margin-left: 55px;
+    text-align: center;
+  }
+  .btn.btn-default{
+    width: 100px;
+    height: 30px;
+    margin-left: 130px;
+    background-color: #fff;
+  }
+  .btn-default:hover{
+    background-color:#eee;
+    color:#000;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form class="form-horizontal" action="reg.php" method="post" onSubmit="return check();" name="newsform">
+      <h1>新闻注册</h1>
+          <!-- <form action="reg.php" method="post" onsubmit="return check();" name="newsform"> -->
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="请输入用户名" name="username" id="username">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" placeholder="请输入密码" name="pwd" id="pwd">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control"  name="password" placeholder="请确认密码" name="repwd" id="repwd">
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="请输入电子邮箱" name="email" id="email">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">注册</button>
+      </div>
+    </form>
+  </form>
+  </div>
+</body>
+</html>
